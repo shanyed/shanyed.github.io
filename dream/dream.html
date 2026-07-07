@@ -1,57 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<meta name="author" content="D">
-		<meta name="description" content="personal website of D | D的赛博书房 ">
 		<!-- ../ 表示返回上一级目录 -->
+    <!-- site-theme:start -->
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("theme-preference");
+          if (theme === "dark" || theme === "light") {
+            document.documentElement.setAttribute("data-theme", theme);
+          }
+        } catch (error) {}
+      })();
+    </script>
+    <!-- site-theme:end -->
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
         <link rel="stylesheet" type="text/css" href="../css/font.css">
         <link rel="icon" href="../picture/fish.jpg" type="image/x-icon"/>
-	</head>
+    <title>梦境 | Jie Ding</title>
+    <!-- site-meta:start -->
+    <meta name="description" content="梦境记录与想象图景。">
+    <meta name="keywords" content="梦境, 想象, 个人博客">
+    <link rel="canonical" href="https://shanyed.github.io/dream/dream.html">
+    <link rel="alternate" type="application/rss+xml" title="Jie Ding RSS" href="../rss.xml">
+    <meta property="og:title" content="梦境">
+    <meta property="og:description" content="梦境记录与想象图景。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shanyed.github.io/dream/dream.html">
+    <meta property="og:image" content="https://shanyed.github.io/picture/fish.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- site-meta:end -->
+</head>
 
 	<body>
 		<nav>
-			<h2>·随笔</h2>
+			<h2>Let thoughts flow.</h2>
 				<ul class="sidebar">
 					<li><a href="../index.html">首页</a></li>
                    <li><a href="../art.html">目录</a></li>
-					<li><a href="../dream/dream.html" style="color: #01847F;">梦境</a></li>
+					<li><a href="../dream/dream.html" aria-current="page">梦境</a></li>
 					<li><a href="../illusion/reading.html">札记</a></li>
-				</ul>
+        </ul>
+        <!-- nav-tools:start -->
+        <ul class="nav-tools" aria-label="站点工具">
+            <li><a class="nav-tool-link nav-tool-random" href="../random.html"><span class="nav-tool-symbol" aria-hidden="true">⤨</span><span class="nav-tool-label-full">随机篇目</span><span class="nav-tool-label-short">随机</span></a></li>
+            <li><a class="nav-tool-link nav-tool-search" href="../search.html"><span class="nav-tool-search-icon" aria-hidden="true"></span><span>搜索</span></a></li>
+            <li class="theme-toggle-item"><a href="#" class="theme-toggle" aria-label="Switch to dark mode" title="Switch theme"><span class="theme-toggle-mark" aria-hidden="true"></span><span class="theme-toggle-label">Dark</span></a></li>
+        </ul>
+        <!-- nav-tools:end -->
 		</nav>
 		<div class="main">
 			<h1 class="header"> 梦境</h1>
 			<h2>2025</h2>
-			<div class="paperlist">
+			<ul class="paperlist">
 				<li><a href="d11_bluedreams.html">- 生活就是一场接着一场的冒险</a></li><!-- 250718 -->
 				<li><a href="d12_city.html">- 废墟之上</a></li><!-- 250704 -->
 				<li><a href="d10_FourDreams.html">- 四个梦境</a></li><!-- 250602 -->
-			</div>
+			</ul>
 			<h2>2024</h2>
-			<div class="paperlist">
-				<li><a href="d_51cloud.html">- 氤氲</I></a></li><!-- 241108 -->
-				<li><a href="d_53wise.html">- 智商测试85分</I></a></li><!-- 241104 -->
-		        <li><a href="d_46died.html">- 谁是凶手</I></a></li><!-- 241020 -->
-				<li><a href="d_45foreward.html">- 太想进步的梦</I></a></li><!-- 241015 -->
-				<li><a href="d_44chaos.html">- 她的梦</I></a></li><!-- 240827 -->
-				<li><a href="d_41death.html">- 死亡万花筒</I></a></li><!-- 240803 -->
-				<li><a href="d_27suitcase.html">- I want to see you</I></a></li><!-- 240508 -->
+			<ul class="paperlist">
+				<li><a href="d_51cloud.html">- 氤氲</a></li><!-- 241108 -->
+				<li><a href="d_53wise.html">- 智商测试85分</a></li><!-- 241104 -->
+		        <li><a href="d_46died.html">- 谁是凶手</a></li><!-- 241020 -->
+				<li><a href="d_45foreward.html">- 太想进步的梦</a></li><!-- 241015 -->
+				<li><a href="d_44chaos.html">- 她的梦</a></li><!-- 240827 -->
+				<li><a href="d_41death.html">- 死亡万花筒</a></li><!-- 240803 -->
+				<li><a href="d_27suitcase.html">- I want to see you</a></li><!-- 240508 -->
 				<li><a href="./3dream2.html">- 我的Knife</a></li><!-- 240110 -->
-			</div>
+			</ul>
 			<h2>2023</h2>
-			<div class="paperlist">
+			<ul class="paperlist">
 				<li><a href="./3dream1.html">- 待宰的羔羊</a></li><!-- 230708 -->
-			</div>
+			</ul>
 		</div>	
 	<script>
     const h1 = document.querySelector('h1');
     if (h1) {
       document.title = h1.innerText + " | Jie Ding";
     }
-  </script>	
-	</body>
-	<div class="footer">©Jie 2023-2025</div>
+  </script>
+<div class="footer">©Jie 2023-2026</div>
+    <script src="../css/theme-toggle.js"></script>
+</body>
+
 </html>
