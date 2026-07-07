@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
 	<meta charset="utf-8">
@@ -7,21 +7,53 @@
 
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="D">
-	<meta name="description" content="personal website of D | D的赛博书房 ">
+    <!-- site-theme:start -->
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("theme-preference");
+          if (theme === "dark" || theme === "light") {
+            document.documentElement.setAttribute("data-theme", theme);
+          }
+        } catch (error) {}
+      })();
+    </script>
+    <!-- site-theme:end -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/snowfall.css">
 	<link rel="icon" href="picture/fish.jpg" type="image/x-icon" />
+    <title>首页 | Jie Ding</title>
+    <!-- site-meta:start -->
+    <meta name="description" content="personal website of D | D的赛博书房">
+    <meta name="keywords" content="个人博客, 随笔, Research">
+    <link rel="canonical" href="https://shanyed.github.io/index.html">
+    <link rel="alternate" type="application/rss+xml" title="Jie Ding RSS" href="rss.xml">
+    <meta property="og:title" content="首页">
+    <meta property="og:description" content="personal website of D | D的赛博书房">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shanyed.github.io/index.html">
+    <meta property="og:image" content="https://shanyed.github.io/picture/fish.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- site-meta:end -->
 </head>
 
 <body>
 	<nav>
-		<h2>·随笔</h2>
+		<h2>Let thoughts flow.</h2>
 		<ul class="sidebar">
-			<li><a href="./index.html" style="color:#007acc;">首页</a></li>
+			<li><a href="./index.html" aria-current="page">首页</a></li>
 			<li><a href="./art.html">目录</a></li>
 			<li><a href="dream/dream.html">梦境</a></li>
 			<li><a href="illusion/reading.html">札记</a></li>
-		</ul>
+        </ul>
+        <!-- nav-tools:start -->
+        <ul class="nav-tools" aria-label="站点工具">
+            <li><a class="nav-tool-link nav-tool-random" href="random.html"><span class="nav-tool-symbol" aria-hidden="true">⤨</span><span class="nav-tool-label-full">随机篇目</span><span class="nav-tool-label-short">随机</span></a></li>
+            <li><a class="nav-tool-link nav-tool-search" href="search.html"><span class="nav-tool-search-icon" aria-hidden="true"></span><span>搜索</span></a></li>
+            <li class="theme-toggle-item"><a href="#" class="theme-toggle" aria-label="Switch to dark mode" title="Switch theme"><span class="theme-toggle-mark" aria-hidden="true"></span><span class="theme-toggle-label">Dark</span></a></li>
+        </ul>
+        <!-- nav-tools:end -->
 	</nav>
 	<div class="main">
 		<h1>首页</h1>
@@ -37,10 +69,10 @@
 			reflections on academic and research life.
 			<a href="./research.html">Start here.</a>
 		</p>
-
+		
 		<h2>作者说明</h2>
 		<blockquote>
-			<span style="color: #102b6a;">
+			<span>
 				向下扎根，向上生长。
 			</span>
 		</blockquote>
@@ -49,7 +81,7 @@
 				href="illusion/reading.html">阅读</a>等随笔，每每回看，便是再次亲临我人生中的几度春夏秋冬。
 			网页架构来自于<a href="https://yanih.github.io/index.html">Yani</a>。<br>
 			关于我：97年生于河南开封，狮子座，INTJ-A-H。
-			
+
 
 			<br>
 			倘若你感兴趣的话，可以看看：<br>
@@ -58,10 +90,51 @@
 		</ul>
 		<br>
 		那么，阅读愉快，<a href="./art.html">就从这里开始吧。</a>
+
 		</p>
+
+		
 		<aside>
             注：生命体验的2026年首篇为了纪念2025年的冬天，使用了下雪特效并且不会被取消。梦境体验有些画面过于宏大，文字描述力度有限，辅以豆包AI生成了图像以供参考。
         </aside>
+
+        <!-- recent-updates:start -->
+        <section class="recent-updates" data-site-enhanced="true">
+            <h2>最近更新</h2>
+            <ul>
+      <li>
+        <a href="awake/a_11Spring.html">春分记</a>
+        <span>2026-04-01 · 随笔</span>
+        <p>今天二月初四，倒是难得的，一连几天的薄雾浓云，一口气全消了。天蓝的像海，几朵柔软的云，游在天边。 往前数三五天，心里还想，北京的冬天还未远去呢，和别的秦岭淮河以北的城市一样，寒冷，萧瑟；可…</p>
+      </li>
+      <li>
+        <a href="awake/a_10MissD.html">On Self-Respect</a>
+        <span>2026-01-24 · 随笔</span>
+        <p>这篇文章引自Joan Didion (1934-2021)，一位美国随笔作家、小说家，其个性鲜明的叙事方法是&quot;成为事件的倾听者与平行记录者&quot;。全文如下：</p>
+      </li>
+      <li>
+        <a href="awake/a_9newyear.html">出发，到新的沉静与天地中去</a>
+        <span>2026-01-01 · 随笔</span>
+        <p>关于“出发，到新的沉静与天地中去”的一篇记录。</p>
+      </li>
+      <li>
+        <a href="awake/a_8shortstory.html">短篇小说</a>
+        <span>2025-12-28 · 随笔</span>
+        <p>从开头到结尾，故事总是有一个完整的结构。起因、经过、高潮、结局。回头去看，才能定义事件A原来是起因，事件F是高潮，而结局，或许是开放式的，或许是封闭式的，但总会有一个终点。 或戛然而止，或…</p>
+      </li>
+      <li>
+        <a href="awake/a_7sunshine.html">待在适合自己的角落</a>
+        <span>2025-10-31 · 随笔</span>
+        <p>一场秋风，几场秋雨，气温骤降，北京入冬了。 我也试着进入冬眠的状态——念头弱一点，态度淡一点，饮食饱一点。不留强烈的期盼，只留一口气静待春天。</p>
+      </li>
+      <li>
+        <a href="Research/r1_hello.html">Hello there!</a>
+        <span>2025-10-31 · Research</span>
+        <p>Welcome to my new page. After putting it off for a whole year, I’m finally starting the Englis…</p>
+      </li>
+            </ul>
+        </section>
+        <!-- recent-updates:end -->
 	</div>
 	<script>
 		const h1 = document.querySelector('h1');
@@ -69,7 +142,9 @@
 			document.title = h1.innerText + " | Jie Ding";
 		}
 	</script>
+	<script src="css/snowfall.js"></script>
+	<div class="footer">©Jie 2023-2026</div>
+    <script src="css/theme-toggle.js"></script>
 </body>
-<div class="footer">©Jie 2023-2026</div>
 
 </html>

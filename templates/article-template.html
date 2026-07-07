@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="D">
+    <meta name="description" content="{{summary}}">
+    <!-- site-theme:start -->
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("theme-preference");
+          if (theme === "dark" || theme === "light") {
+            document.documentElement.setAttribute("data-theme", theme);
+          }
+        } catch (error) {}
+      })();
+    </script>
+    <!-- site-theme:end -->
+    <link rel="stylesheet" type="text/css" href="{{asset_prefix}}css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{asset_prefix}}css/font.css">
+    <link rel="icon" href="{{asset_prefix}}picture/fish.jpg" type="image/x-icon">
+    <title>{{title}} | Jie Ding</title>
+</head>
+
+<body>
+    <nav>
+        <h2>Let thoughts flow.</h2>
+        <ul class="sidebar">
+            <li><a href="{{asset_prefix}}index.html">首页</a></li>
+            <li><a href="{{asset_prefix}}art.html">目录</a></li>
+            <li><a href="{{asset_prefix}}dream/dream.html">梦境</a></li>
+            <li><a href="{{asset_prefix}}illusion/reading.html">札记</a></li>
+        </ul>
+        <!-- nav-tools:start -->
+        <ul class="nav-tools" aria-label="站点工具">
+            <li><a class="nav-tool-link nav-tool-random" href="{{asset_prefix}}random.html"><span class="nav-tool-symbol" aria-hidden="true">⤨</span><span class="nav-tool-label-full">随机篇目</span><span class="nav-tool-label-short">随机</span></a></li>
+            <li><a class="nav-tool-link nav-tool-search" href="{{asset_prefix}}search.html"><span class="nav-tool-search-icon" aria-hidden="true"></span><span>搜索</span></a></li>
+            <li class="theme-toggle-item"><a href="#" class="theme-toggle" aria-label="Switch to dark mode" title="Switch theme"><span class="theme-toggle-mark" aria-hidden="true"></span><span class="theme-toggle-label">Dark</span></a></li>
+        </ul>
+        <!-- nav-tools:end -->
+    </nav>
+    <div class="main">
+        <h1>{{title}}</h1>
+        <div class="name">D - {{date}}</div>
+        <!-- post-summary:start -->
+        <div class="post-info" data-site-enhanced="true">{{tags}}</div>
+        <!-- post-summary:end -->
+        {{content}}
+    </div>
+    {{post_nav}}
+    <div class="footer">©Jie 2023-2026</div>
+    <script src="{{asset_prefix}}css/theme-toggle.js"></script>
+</body>
+
+</html>

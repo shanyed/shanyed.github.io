@@ -1,31 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="D">
-	<meta name="description" content="personal website of D | D的赛博书房 ">
+    <!-- site-theme:start -->
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("theme-preference");
+          if (theme === "dark" || theme === "light") {
+            document.documentElement.setAttribute("data-theme", theme);
+          }
+        } catch (error) {}
+      })();
+    </script>
+    <!-- site-theme:end -->
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/font.css">
 	<link rel="icon" href="../picture/fish.jpg" type="image/x-icon" />
-
+    <title>创新港 | Jie Ding</title>
+    <!-- site-meta:start -->
+    <meta name="description" content="幸运的是，入住创新港两天。 不幸的是，复试的老师一个也不认识。">
+    <meta name="keywords" content="随笔">
+    <link rel="canonical" href="https://shanyed.github.io/alive/0post2.html">
+    <link rel="alternate" type="application/rss+xml" title="Jie Ding RSS" href="../rss.xml">
+    <meta property="og:title" content="创新港">
+    <meta property="og:description" content="幸运的是，入住创新港两天。 不幸的是，复试的老师一个也不认识。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://shanyed.github.io/alive/0post2.html">
+    <meta property="og:image" content="https://shanyed.github.io/picture/fish.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- site-meta:end -->
 </head>
 
 <body>
 	<nav>
-		<h2>·随笔</h2>
+		<h2>Let thoughts flow.</h2>
 		<ul class="sidebar">
 			<li><a href="../index.html">首页</a></li>
-			<li><a href="../art.html" style="color:darkblue;">目录</a></li>
+			<li><a href="../art.html" aria-current="page">目录</a></li>
 			<li><a href="../dream/dream.html">梦境</a></li>
 			<li><a href="../illusion/reading.html">札记</a></li>
-		</ul>
+        </ul>
+        <!-- nav-tools:start -->
+        <ul class="nav-tools" aria-label="站点工具">
+            <li><a class="nav-tool-link nav-tool-random" href="../random.html"><span class="nav-tool-symbol" aria-hidden="true">⤨</span><span class="nav-tool-label-full">随机篇目</span><span class="nav-tool-label-short">随机</span></a></li>
+            <li><a class="nav-tool-link nav-tool-search" href="../search.html"><span class="nav-tool-search-icon" aria-hidden="true"></span><span>搜索</span></a></li>
+            <li class="theme-toggle-item"><a href="#" class="theme-toggle" aria-label="Switch to dark mode" title="Switch theme"><span class="theme-toggle-mark" aria-hidden="true"></span><span class="theme-toggle-label">Dark</span></a></li>
+        </ul>
+        <!-- nav-tools:end -->
 	</nav>
 	<div class="main">
 		<h1>创新港</h1>
 		<div class="name" style="text-align: center;">D - 2020年5月9日</div>
+    <!-- post-summary:start -->
+    <div class="post-info" data-site-enhanced="true">
+      <span class="post-tags"><a href="../tags.html#tag-%E9%9A%8F%E7%AC%94">随笔</a></span>
+    </div>
+    <!-- post-summary:end -->
 		<p>幸运的是，入住创新港两天。</p>
 		<p>不幸的是，复试的老师一个也不认识。</p>
 
@@ -36,7 +71,16 @@
 			document.title = h1.innerText + " | Jie Ding";
 		}
 	</script>
-</body>
+
+<!-- post-nav:start -->
+<nav class="post-nav" aria-label="文章导航" data-site-enhanced="true">
+  <span class="post-nav-link post-nav-prev"><span class="post-nav-label">上一篇</span><a class="post-nav-title" href="0post4.html" title="平凡的时刻">平凡的时刻</a></span>
+  <a class="post-nav-index" href="../art.html">返回目录</a>
+  <span class="post-nav-link post-nav-next"><span class="post-nav-label">下一篇</span><a class="post-nav-title" href="0post1.html" title="徐涛">徐涛</a></span>
+</nav>
+<!-- post-nav:end -->
 <div class="footer">©Jie 2023-2026</div>
+    <script src="../css/theme-toggle.js"></script>
+</body>
 
 </html>

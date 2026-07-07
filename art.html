@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="D">
-    <meta name="description" content="personal website of D | D的赛博书房 ">
+    <!-- site-theme:start -->
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("theme-preference");
+          if (theme === "dark" || theme === "light") {
+            document.documentElement.setAttribute("data-theme", theme);
+          }
+        } catch (error) {}
+      })();
+    </script>
+    <!-- site-theme:end -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/font.css">
     <link rel="icon" href="picture/fish.jpg" type="image/x-icon" />
@@ -27,31 +38,63 @@
             display: block;
         }
     </style>
+    <title>目录 | Jie Ding</title>
+    <!-- site-meta:start -->
+    <meta name="description" content="按年份浏览随笔、生活记录与个人经验。">
+    <meta name="keywords" content="随笔, 生活, 个人博客">
+    <link rel="canonical" href="https://shanyed.github.io/art.html">
+    <link rel="alternate" type="application/rss+xml" title="Jie Ding RSS" href="rss.xml">
+    <meta property="og:title" content="目录">
+    <meta property="og:description" content="按年份浏览随笔、生活记录与个人经验。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shanyed.github.io/art.html">
+    <meta property="og:image" content="https://shanyed.github.io/picture/fish.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- site-meta:end -->
 </head>
 
 <body>
     <div id="cat">
-        <img src="picture/catsprite/cat.png" id="catImg" alt="pixel cat">
+        <img src="picture/catsprite/cat.png" id="catImg" alt="pixel cat" loading="lazy" decoding="async">
     </div>
 
     <nav>
-        <h2>·随笔</h2>
+        <h2>Let thoughts flow.</h2>
         <ul class="sidebar">
             <li><a href="./index.html">首页</a></li>
-            <li><a href="./art.html" style="color:darkblue;">目录</a></li>
+            <li><a href="./art.html" aria-current="page">目录</a></li>
             <li><a href="dream/dream.html">梦境</a></li>
             <li><a href="illusion/reading.html">札记</a></li>
         </ul>
+        <!-- nav-tools:start -->
+        <ul class="nav-tools" aria-label="站点工具">
+            <li><a class="nav-tool-link nav-tool-random" href="random.html"><span class="nav-tool-symbol" aria-hidden="true">⤨</span><span class="nav-tool-label-full">随机篇目</span><span class="nav-tool-label-short">随机</span></a></li>
+            <li><a class="nav-tool-link nav-tool-search" href="search.html"><span class="nav-tool-search-icon" aria-hidden="true"></span><span>搜索</span></a></li>
+            <li class="theme-toggle-item"><a href="#" class="theme-toggle" aria-label="Switch to dark mode" title="Switch theme"><span class="theme-toggle-mark" aria-hidden="true"></span><span class="theme-toggle-label">Dark</span></a></li>
+        </ul>
+        <!-- nav-tools:end -->
     </nav>
     <div class="main">
         <h1 class="header">目录 </h1>
-         <h2 style="color: #666666;"> 2026 </h2>
+        <!-- index-sections:start -->
+        <nav class="index-sections" aria-label="目录分类" data-site-enhanced="true">
+            <div class="index-section-row">
+                <a href="art.html" aria-current="page">全部</a>
+                <a href="art.html">随笔</a>
+                <a href="dream/dream.html">梦境</a>
+                <a href="illusion/reading.html">札记</a>
+                <a href="research.html">Research</a>
+            </div>
+            <div class="index-section-row index-years"><a href="#year-2026">2026</a><a href="#year-2025">2025</a><a href="#year-2024">2024</a><a href="#year-2020">2020</a><a href="#year-2018">2018</a></div>
+        </nav>
+        <!-- index-sections:end -->
+         <h2 id="year-2026"> 2026 </h2>
         <ul class="paperlist">
             <li><a href="awake/a_11Spring.html">- 春分记</a></li><!-- 260401 -->
             <li><a href="awake/a_10MissD.html">- On Self-Respect</a></li><!-- 260124 -->
             <li><a href="awake/a_9newyear.html">- 出发，到新的沉静与天地中去</a></li><!-- 260101 -->
         </ul>
-         <h2 style="color: #666666;"> 2025 </h2>
+         <h2 id="year-2025"> 2025 </h2>
         <ul class="paperlist">
             <li><a href="awake/a_8shortstory.html">- 短篇小说</a></li><!-- 251228 -->
             <li><a href="awake/a_7sunshine.html">- 待在适合自己的角落</a></li><!-- 251031 -->
@@ -62,7 +105,7 @@
             <li><a href="awake/a_2Grain_Full.html">- 小满</a></li><!-- 250521 -->
             <li><a href="awake/a_1plan.html">- 当我谈论起2024时</a></li><!-- 250310 -->
         </ul>
-         <h2 style="color: #666666;"> 2024 </h2>
+         <h2 id="year-2024"> 2024 </h2>
         <ul class="paperlist">
             <li><a href="alive/a_54midwinter.html">- 冬至快乐</a></li><!-- 241221 -->
             <li><a href="alive/a_52song.html">- 解放之歌</a></li><!-- 241111 -->
@@ -83,7 +126,7 @@
             <li><a href="alive/a_Gino.html">- 蔑视基诺</a></li><!-- 240413 -->
             <li><a href="alive/a_22honest.html">- 诚实的生活方式</a></li><!-- 240405 -->
         </ul>
-        <h2 style="color: #666666;"> 2020-2023 </h2>
+        <h2 id="year-2020"> 2020-2023 </h2>
         <ul class="paperlist">
             <!--  <li><a href="alive/a_1566.html">- 没道理</a></li>    -->
             <li><a href="alive/3post4.html">- 寻清净处</a></li><!-- 230706 -->
@@ -101,7 +144,7 @@
             <li><a href="alive/0post2.html">- 创新港</a></li><!-- 200509 -->
             <li><a href="alive/0post1.html">- 徐涛</a></li><!-- 200415 -->
         </ul>
-        <h2 style="color: #666666;"> 2018-2019 </h2>
+        <h2 id="year-2018"> 2018-2019 </h2>
         <ul class="paperlist">
             <li><a href="alive/9post1.html">- 醒来</a></li><!-- 190411 -->
             <li><a href="alive/8post1.html">- Eternal Law</a></li><!-- 180402 -->
@@ -176,6 +219,7 @@
             document.title = h1.innerText + " | Jie Ding";
         }
     </script>
+    <script src="css/theme-toggle.js"></script>
 </body>
 
 </html>

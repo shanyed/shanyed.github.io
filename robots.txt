@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shanyed.github.io/sitemap.xml

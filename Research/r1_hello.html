@@ -6,31 +6,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Jie Ding">
-  <meta name="description" content="Research Blog of Jie Ding | Quiet Passion">
+    <!-- site-theme:start -->
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("theme-preference");
+          if (theme === "dark" || theme === "light") {
+            document.documentElement.setAttribute("data-theme", theme);
+          }
+        } catch (error) {}
+      })();
+    </script>
+    <!-- site-theme:end -->
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="stylesheet" type="text/css" href="../css/font.css">
   <link rel="icon" href="../picture/fish.jpg" type="image/x-icon" />
-  <title>Traces of Thought | Jie Ding</title>
+  <title>Hello there! | Jie Ding</title>
   <style>
     .main p {
       text-indent: 0;
     }
   </style>
-
+    <!-- site-meta:start -->
+    <meta name="description" content="Welcome to my new page. After putting it off for a whole year, I’m finally starting the Englis…">
+    <meta name="keywords" content="Research">
+    <link rel="canonical" href="https://shanyed.github.io/Research/r1_hello.html">
+    <link rel="alternate" type="application/rss+xml" title="Jie Ding RSS" href="../rss.xml">
+    <meta property="og:title" content="Hello there!">
+    <meta property="og:description" content="Welcome to my new page. After putting it off for a whole year, I’m finally starting the Englis…">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://shanyed.github.io/Research/r1_hello.html">
+    <meta property="og:image" content="https://shanyed.github.io/picture/fish.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- site-meta:end -->
 </head>
 
 <body>
   <nav>
-    <h2>· Traces of Thought</h2>
+    <h2>Let thoughts flow.</h2>
     <ul class="sidebar">
       <li><a href="../index.html">Home</a></li>
-      <li><a href="../research.html" style="color:darkblue;">Contents</a></li>
-    </ul>
+      <li><a href="../research.html" aria-current="page">Contents</a></li>
+        </ul>
+        <!-- nav-tools:start -->
+        <ul class="nav-tools" aria-label="站点工具">
+            <li><a class="nav-tool-link nav-tool-random" href="../random.html"><span class="nav-tool-symbol" aria-hidden="true">⤨</span><span class="nav-tool-label-full">随机篇目</span><span class="nav-tool-label-short">随机</span></a></li>
+            <li><a class="nav-tool-link nav-tool-search" href="../search.html"><span class="nav-tool-search-icon" aria-hidden="true"></span><span>搜索</span></a></li>
+            <li class="theme-toggle-item"><a href="#" class="theme-toggle" aria-label="Switch to dark mode" title="Switch theme"><span class="theme-toggle-mark" aria-hidden="true"></span><span class="theme-toggle-label">Dark</span></a></li>
+        </ul>
+        <!-- nav-tools:end -->
   </nav>
 
   <div class="main">
     <h1>Hello there!</h1>
     <div class="name" style="text-align: center;">🐾 31 October 2025 🐾 </div>
+    <!-- post-summary:start -->
+    <div class="post-info" data-site-enhanced="true">
+      <span class="post-tags"><a href="../tags.html#tag-research">Research</a></span>
+    </div>
+    <!-- post-summary:end -->
 
     <p>
       Welcome to my new page. <br>
@@ -68,7 +102,15 @@
     }
   </script>
 
-  <div class="footer">©Jie 2023-2026</div>
+<!-- post-nav:start -->
+<nav class="post-nav" aria-label="文章导航" data-site-enhanced="true">
+  <span class="post-nav-link post-nav-empty post-nav-prev" aria-hidden="true"></span>
+  <a class="post-nav-index" href="../research.html">返回目录</a>
+  <span class="post-nav-link post-nav-empty post-nav-next" aria-hidden="true"></span>
+</nav>
+<!-- post-nav:end -->
+<div class="footer">©Jie 2023-2026</div>
+    <script src="../css/theme-toggle.js"></script>
 </body>
 
 </html>
