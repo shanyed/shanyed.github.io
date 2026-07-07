@@ -44,9 +44,16 @@
     </nav>
     <div class="main">
         <h1>{{title}}</h1>
-        <div class="name">D - {{date}}</div>
+        <div class="name">D</div>
         <!-- post-summary:start -->
-        <div class="post-info" data-site-enhanced="true">{{tags}}</div>
+        <section class="post-archive-head" aria-label="作品档案" data-site-enhanced="true">
+            <div class="post-kicker">Archive · {{section}}</div>
+            <div class="post-info">
+                <time datetime="{{date}}">{{date}}</time>
+                <span class="post-tags">{{tags}}</span>
+            </div>
+            <p class="post-summary">{{summary}}</p>
+        </section>
         <!-- post-summary:end -->
         {{content}}
     </div>
